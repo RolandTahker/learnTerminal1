@@ -14,39 +14,43 @@ for(let i=0; i<16; i++){
     write('\n');
 }
 
-write(boxen(chalk.blue.bgBlack('CSGO'), {
+write(boxen(chalk.blue.bgBlack.inverse('CSGO INVERSE'), {
     padding: 1,
-    margin: 1,
+    margin: 3,
     borderStyle: 'double',
+    title: 'Roland Tahker',
+    titleAlignment: 'left',
 
 
 }));
 
-write(boxen(chalk.black.bgRed('RIO'), {
+write(boxen(chalk.yellow.bold('RIO BOLD FONT'), {
     padding: 1,
     margin: 1,
+    title: 'MM-21',
+    titleAlignment: 'right',
 
 }));
 
-write(boxen(chalk.blue.bgBlack('MAJOR'), {
+write(boxen(chalk.blue.bgBlack.strikethrough('MAJOR'), {
     padding: 1,
     margin: 1,
     title: 'Faze 😂',
     titleAlignment: 'center',
-    borderStyle: 'double'
+    borderStyle: 'classic'
 
 }));
 
-write(boxen(chalk.black.bgRed('2022'), {
-    padding: 1,
-    margin: 1,
-
-}));
-
-write(boxen(chalk.red.bgBlack('BRAZIL'), {
+write(boxen(chalk.underline.black.bgRed('2022'), {
     padding: 1,
     margin: 1,
     borderStyle: 'double'
+}));
+
+write(boxen(chalk.red.bgBlack.italic('BRAZIL'), {
+    padding: 1,
+    margin: 1,
+    borderStyle: 'arrow'
 
 }));
 
